@@ -7,10 +7,10 @@ import Nav from './Nav';
 
 const menu = {
     open: {
-        width: "480px",
-        height: "650px",
+        width: "90vw",
+        height: "90vh",
         top: "-25px",
-        right: "-25px",
+        right: "-10px",
         transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1]}
     },
     closed: {
