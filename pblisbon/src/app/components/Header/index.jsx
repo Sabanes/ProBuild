@@ -4,18 +4,19 @@ import { AnimatePresence, motion } from 'framer-motion';
 import Button from './Button';
 import styles from './style.module.scss';
 import Nav from './Nav';
+import Image from 'next/image';
 
 const menu = {
     open: {
         width: "90vw",
-        height: "90vh",
-        top: "-25px",
+        height: "85vh",
+        top: "-10px",
         right: "-10px",
         transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1]}
     },
     closed: {
-        width: "100px",
-        height: "40px",
+        width: "90px",
+        height: "35px",
         top: "0px",
         right: "0px",
         transition: { duration: 0.75, delay: 0.35, type: "tween", ease: [0.76, 0, 0.24, 1]}
@@ -26,7 +27,15 @@ export default function Index() {
     const [isActive, setIsActive] = useState(false);
 
     return (
+    <div className=' z-50'>
+        <div className='w-screen border-b fixed top-5 pb-4'>  
+          
+            <img src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/gpnuolj0ioy2lzh8ydgn" alt="logo" width={70} className='absolute md:bottom-[0px] bottom-1 md:w-[70px] w-[60px]' />
+            <a href=""><p className=' z-10 uppercase md:pl-[3.5rem] pl-[3.2rem] mb-1 font-medium text-[var(--dark-grey)] text-[1.1rem]'>Probuild</p></a>
+        </div>
+
         <div className={styles.header}>
+            
             <motion.div 
                 className={styles.menu}
                 variants={menu}
@@ -39,5 +48,6 @@ export default function Index() {
             </motion.div>
             <Button isActive={isActive} toggleMenu={() => {setIsActive(!isActive)}}/>
         </div>
+    </div>
     )
 }

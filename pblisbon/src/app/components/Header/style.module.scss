@@ -1,11 +1,12 @@
 .header{
     position: fixed;
-    right: 20px;
-    top: 35px;
+    right: 25px;
+    top: 15px;
+    z-index: 100;
     .menu{
-        width: 480px;
+        max-width: 400px;
         height: 650px;
-        background-color:#c9fd74;
+        background-color:#f55e41;
         border-radius: 25px;
         position: relative;
     }
