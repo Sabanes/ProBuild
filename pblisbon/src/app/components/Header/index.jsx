@@ -15,9 +15,9 @@ const menu = {
         transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1]}
     },
     closed: {
-        width: "90px",
-        height: "35px",
-        top: "0px",
+        width: "80px",
+        height: "30px",
+        top: "5px",
         right: "0px",
         transition: { duration: 0.75, delay: 0.35, type: "tween", ease: [0.76, 0, 0.24, 1]}
     }
@@ -27,7 +27,7 @@ export default function Index() {
     const [isActive, setIsActive] = useState(false);
 
     return (
-    <div className=' z-50'>
+    <div className=' z-50 m-auto'>
         <div className='w-screen border-b fixed top-5 pb-4'>  
           
             <img src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/gpnuolj0ioy2lzh8ydgn" alt="logo" width={70} className='absolute md:bottom-[0px] bottom-1 md:w-[70px] w-[60px]' />

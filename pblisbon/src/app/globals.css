@@ -19,6 +19,8 @@ body{
   background-color: var(--white);
   color: var(--dark-grey);
   font-family: 'Satoshi', sans-serif;
+  max-width: 2560px;
+  margin: 0 auto;
 }
 
 /*
@@ -26,6 +28,7 @@ body{
 */
 *, *::before, *::after {
   box-sizing: border-box;
+  outline: none;
 }
 /*
   2. Remove default margin
@@ -67,3 +70,9 @@ p, h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
+
+
+.clip_path-container {
+  clip-path: inset(50% 50%);
+}
+
