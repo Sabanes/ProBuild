@@ -28,7 +28,7 @@ export default function Index() {
 
     return (
     <div className=' z-50 m-auto'>
-        <div className='w-screen border-b fixed top-5 pb-4'>  
+        <div className='w-screen  fixed top-5 pb-4'>  
           
             <img src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/gpnuolj0ioy2lzh8ydgn" alt="logo" width={70} className='absolute md:bottom-[0px] bottom-1 md:w-[70px] w-[60px]' />
             <a href=""><p className=' z-10 uppercase md:pl-[3.5rem] pl-[3.2rem] mb-1 font-medium text-[var(--dark-grey)] text-[1.1rem]'>Probuild</p></a>
