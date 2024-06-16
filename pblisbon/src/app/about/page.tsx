@@ -4,12 +4,15 @@ const page = () => {
   return (
     <>
       <Header />
+    
       <div className='z-10 flex flex-col justify-center items-center gap-10 relative top-10'>
+      <a href="/project">
       <div className='z-10 flex flex-col justify-center items-center '>
       <div className='z-10 trin w-[100px] h-10 bg-[var(--orange)]'></div>
       <div className='z-10 w-[100px] h-10 bg-[var(--orange)]'></div>
       <h1>Casa de um Espanhol  </h1>
       </div>
+      </a>
       <a href="/contact">
       <div className='z-10 flex flex-col justify-center items-center '>
       <div className='z-10 trin w-[100px] h-10 bg-[var(--orange)]'></div>
