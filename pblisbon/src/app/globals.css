@@ -76,3 +76,40 @@ p, h1, h2, h3, h4, h5, h6 {
   clip-path: inset(50% 50%);
 }
 
+.parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+}
+.parentTwo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .parent {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 1269px) {
+  .parentTwo {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .parentTwo {
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr;
+  }
+}
+
+
+.trin {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+
+}

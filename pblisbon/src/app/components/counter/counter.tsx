@@ -8,10 +8,10 @@ interface CounterProps {
 
 const Counter: React.FC<CounterProps> = ({ number, title }) => {
   return (
-    <div className="flex ">
+    <span className="flex ">
       <CountUp duration={10}  end={number} />
       <span>{title}</span>
-    </div>
+    </span>
   );
 };
 
