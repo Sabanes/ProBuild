@@ -1,0 +1,31 @@
+/* Accordion.module.css */
+
+.accordion {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.accordionItem {
+  margin-bottom: 10px;
+}
+
+.accordionTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  padding: 7px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.accordionContent {
+  padding: 10px;
+}
+
+@media only screen and (min-width: 1536px) {
+  .accordionTitle {
+    font-size: 2vw;
+  }
+}
