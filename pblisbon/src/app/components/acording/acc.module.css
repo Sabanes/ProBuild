@@ -2,8 +2,14 @@
 
 .accordion {
   width: 100%;
-  padding-top: 1rem;
+  padding-top: 3rem;
   padding-bottom: 2rem;
+}
+
+@media only screen and (max-width: 990px) {
+  .accordion {
+    padding-top: 10px;
+  }
 }
 
 .accordionItem {

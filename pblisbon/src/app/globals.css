@@ -2,12 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --orange: #f55e41;
   --light-grey: #848483;
   --dark-grey: #3b3b3b;
   --green: #0b2921;
-  --white: #f5f5f5;
+  --white: #fff;
 }
 
 @font-face {
@@ -21,8 +22,7 @@ body{
   font-family: 'Satoshi', sans-serif;
   max-width: 2560px;
   margin: 0 auto;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  overflow-x: hidden;
 }
 
 /*
@@ -86,39 +86,47 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .parentTwo {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 25%);
   justify-content: center;
   justify-items: center;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 990px) {
   .parent {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
 
   body {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
-@media only screen and (max-width: 1269px) {
+@media only screen and (max-width: 1069px) {
   .parentTwo {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 1fr 1fr;
+    justify-content: space-between;
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 614px) {
   .parentTwo {
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    justify-content: center;
   }
 }
+
+@media only screen and (min-width: 1600px) {
+  body {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
 
 
 .trin {
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-
 }
-
 
