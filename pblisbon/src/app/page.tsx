@@ -63,8 +63,8 @@ export default function Home() {
       </main>
 
       <div className='m-auto flex md:flex-row flex-col-reverse relative top-[10rem] gap-[30px]'>  
-        <Image width={500} height={500} className='clip_path-container md:w-[37%] overflow-hidden w-0' src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/dekbvvdmimc2kokp4yt3" alt="Probuild Lisbon builder" />
-        <Image width={900} height={500} className='clip_path-container md:w-[63%] overflow-hidden' src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/nec9l5l7ps6z7os4riyu" alt="Probuild Lisbon House" />
+        <Image width={500} height={500} className=' rounded-r-3xl clip_path-container md:w-[37%] overflow-hidden w-0' src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/dekbvvdmimc2kokp4yt3" alt="Probuild Lisbon builder" />
+        <Image width={900} height={500} className=' md:rounded-l-3xl rounded-3xl clip_path-container md:w-[63%] overflow-hidden' src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/nec9l5l7ps6z7os4riyu" alt="Probuild Lisbon House" />
       </div>
 
       <StatsSection />
@@ -74,14 +74,14 @@ export default function Home() {
       <section className='md:px-[126px] m-auto flex lg:flex-row flex-col flex-1 py-20'>
         <div className='flex flex-col pt-10 lg:w-[50%]'>
           <h1 className='2xl:text-[5vw] lg:text-6xl text-5xl font-bold'>Vision Forge</h1>
-          <p className='md:max-w-[80%] pt-[14px] pb-[32px] 2xl:text-3xl lg:text-lg text-sm'>
+          <p className='max-w-[80%] pt-[14px] pb-[32px] 2xl:text-3xl lg:text-lg text-sm'>
             Where Dreams Take Shape, Creating Unforgettable Architectural Wonders With Expert Craftsmanship and Precision Execution. Transforming Inspirations into Magnificent, Enduring Architectural Masterpieces Expert Craftsmanship and Precision
           </p>
-          <Image width={400} height={600} loading='lazy' className='lg:w-[90%]' src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/kpwpinikrjymgd4rxoie" alt="Probuild Lisbon builder" />
+          <Image width={1000} height={600} loading='lazy' className='lg:w-[90%] rounded-3xl' src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/kpwpinikrjymgd4rxoie" alt="Probuild Lisbon builder" />
         </div>
 
-        <div className='flex lg:flex-col flex-col-reverse pt-10 lg:w-[50%]'>
-          <Image width={400} height={600}loading='lazy' className='lg:w-full' src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/apygnnvdhbdvzxhpe8ro" alt="Apartment remodelation by Probuild Lisbon" />
+        <div className='flex lg:flex-col flex-col-reverse pt-5 lg:w-[50%]'>
+          <Image width={1000} height={600}loading='lazy' className='lg:w-full rounded-3xl mt-10' src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/apygnnvdhbdvzxhpe8ro" alt="Apartment remodelation by Probuild Lisbon" />
           <Accordion />
         </div>
       </section>
