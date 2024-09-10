@@ -2,13 +2,14 @@
   width: 100%;
   background: var(--orange);
   border-radius: 24px;
-  margin-top: 20px;
+  margin-top: 48px;
   padding-left: 3rem;
   padding-right: 3rem;
 }
 
 @media only screen and (max-width: 990px) {
   .accordion {
+    margin-top: 30px;
     padding-top: 10px;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -16,12 +17,12 @@
 }
 
 .accordionItem {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding-top: 2rem;
 }
 
 .accordionItem:last-child {
-  padding-bottom: 2rem;
+  padding-bottom: 2.3rem;
 }
 
 .accordionTitle {
@@ -35,7 +36,7 @@
 }
 
 .accordionContent {
-  padding: 0 53px;
+  padding: 0 110px;
   background: #fff;
   border-radius: 20px;
   max-height: 0;

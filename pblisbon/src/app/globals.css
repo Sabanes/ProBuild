@@ -4,7 +4,7 @@
 
 
 :root {
-  --orange: #F55E41;
+  --orange: #f04d2d;
   --light-grey: #848483;
   --dark-grey: #3b3b3b;
   --green: #0b2921;
@@ -16,10 +16,11 @@
   src: url('../../public/OTF/Satoshi-Regular.otf');
 }
 
+
 body{
   background-color: var(--white);
   color: var(--dark-grey);
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Satoshi';
   max-width: 2560px;
   margin: 0 auto;
   overflow-x: hidden;

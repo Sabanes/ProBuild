@@ -2,13 +2,14 @@
 
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
-
+import { motion } from "framer-motion"
 import Header from './components/Header';
 import Counter from './components/counter/counter';
 import Accordion from './components/acording/acording';
 import Image from 'next/image';
 import Counting from './components/countings/counting';
 import StatsSection from './components/Stats/stats';
+import { AppleCardsCarouselDemo } from './components/carousel/CarouselUse';
 
 export default function Home() {
   useEffect(() => {
@@ -70,7 +71,7 @@ export default function Home() {
 
       <Counting />
 
-      <section className='md:px-[126px] m-auto flex lg:flex-row flex-col flex-1 py-20'>
+      <section className='md:px-[126px] m-auto flex lg:flex-row flex-col flex-1 pb-32 py-20'>
         <div className='flex flex-col pt-10 lg:w-[50%]'>
           <h1 className='2xl:text-[5vw] lg:text-6xl text-5xl font-bold text-center md:text-left'>Vision Forge</h1>
           <p className='md:max-w-[80%] pt-[14px] pb-[32px] 2xl:text-3xl lg:text-2xl text-xl md:text-left text-center'>
@@ -85,17 +86,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='bg-[var(--orange)] md:-mx-0 -mx-[20px] px-[20px]'>
-        <div className='flex py-10 flex-col text-white text-center md:max-w-[80%] m-auto'>
-          <h1 className='font-bold 2xl:text-[5vw] lg:text-6xl text-5xl leading-[3.5rem]'>Building Tomorrow's Landmarks with Expert Precision.</h1>
-          <p className='text-xl pt-5 '>The types of construction projects our company specializes in include <br /> residential, commercial, industrial, and renovation projects.</p>
-        </div>
-
-
-        <div className=''>
-          <div></div>
-          <div></div>
-        </div>
+      <section className='bg-[var(--orange)] 2xl:-m-[80px] lg:-m-[0px] -mx-[20px] px-[25px] pb-20 max-w-[100vw] '>
+        <div className='flex lg:py-[6rem] py-20 flex-col text-white text-center md:max-w-[80%] m-auto'>
+          <h1 className='lg:py-7 pb-6 font-bold 2xl:text-[5vw] lg:text-7xl sm:text-[2.7rem] xs:text-[2rem] md:!leading-[6rem] !leading-[1.2]'>Building Tomorrow's Landmarks with Expert Precision.</h1>
+          <p className='lg:text-2xl text-lg '>The types of construction projects our company specializes in include <br /> residential, commercial, industrial, and renovation projects.</p>
+        </div>  
+        <AppleCardsCarouselDemo/>
       </section>
     </>
   );
