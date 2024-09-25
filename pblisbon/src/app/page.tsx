@@ -2,7 +2,7 @@
 
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
-import { motion } from "framer-motion"
+import { motion, spring } from "framer-motion"
 import Header from './components/Header';
 import Counter from './components/counter/counter';
 import Accordion from './components/acording/acording';
@@ -32,34 +32,43 @@ export default function Home() {
       <main className='md:px-10 max-w-full w-full flex flex-col md:flex-row gap-x-[60px] items-center justify-center relative top-[6rem]'>
         <section className='flex flex-col md:w-[60%]'>
           <div className='w-full flex gap-3 items-center'>
-            <p className='md:text-[5.7vw] text-[8.5vw] font-bold uppercase'>Your</p>
+            <motion.p
+            initial={{scale: 0}} whileInView={{scale: 1}} transition={{type: "spring", stiffness: 300, damping: 50}}
+            className='md:text-[5.7vw] text-[7.5vw] font-bold uppercase'>Your</motion.p>
             <span className="clip_path-container relative md:h-[7.5vw] h-[11vw] aspect-[4/2] rounded-full overflow-hidden">
               <Image width={300} height={100} className="bg-cover" src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/kc2immccq0fyqy9mkz4d" alt="Vision" />
             </span>
-            <p className='md:text-[5.7vw] text-[8.5vw] font-bold uppercase'>Vision</p>
+            <motion.p
+            initial={{scale: 0}} whileInView={{scale: 1}} transition={{type: "spring", stiffness: 300, damping: 50}} 
+            className='md:text-[5.7vw] text-[7.5vw] font-bold uppercase'>Vision</motion.p>
           </div>
           <div className='w-full flex gap-3 items-center'>
-            <p className='md:text-[5vw] text-[8.5vw] font-bold uppercase'>Our Mastery</p>
+            <motion.p
+            initial={{scale: 0}} whileInView={{scale: 1}} transition={{type: "spring", stiffness: 300, damping: 50}} 
+            className='md:text-[5vw] text-[8.5vw] font-bold uppercase'>Our Mastery</motion.p>
             <span className="clip_path-container relative md:h-[7.5vw] h-[11vw] aspect-[4/2] rounded-full overflow-hidden">
               <Image width={300} height={100} className="bg-cover" src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/qh4rjipqcbgr4po9juoo" alt="Mastery" />
             </span>
           </div>
         </section>
         
-        <section className='md:w-[30%] 2xl:w-[20%] xs:max-w-[90%] w-full flex flex-col gap-6 items-start relative top-5 md:pl-0'>
+        <motion.section 
+        initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 4}}
+        className='md:w-[30%] 2xl:w-[20%] xs:max-w-[90%] w-full flex flex-col gap-6 items-start relative top-5 md:pl-0'>
           <span className='border w-1/3'></span>
-          <p className='md:text-sm text-sm 2xl:text-3xl'>
+          <p
+          className='md:text-sm text-sm 2xl:text-3xl'>
             Showcasing Our Diverse Construction Portfolio, <br /> Expert Services, Satisfied Client Testimonials, <br /> and Converting Inquiry Channels.
           </p>
           <div className='flex flex-row items-center gap-3 md:pt-1'>
             <p className='md:text-5xl text-4xl text-[var(--dark-grey)]'>
-              <Counter number={100} title="+" />
+              100+
             </p>
             <p className='md:text-xl text-md tracking-widest'>
               Happy <br /> homeowners
             </p>
           </div>
-        </section>
+        </motion.section>
       </main>
 
       <div className='m-auto flex md:flex-row flex-col-reverse relative top-[10rem] gap-[30px]'>  
