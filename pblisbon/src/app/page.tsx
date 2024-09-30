@@ -29,7 +29,7 @@ export default function Home() {
     <>    
       <Header />
 
-      <main className='md:px-10 max-w-full w-full flex flex-col md:flex-row gap-x-[60px] items-center justify-center relative top-[6rem]'>
+      <main className=' md:px-10 max-w-full w-full flex flex-col md:flex-row gap-x-[60px] items-center justify-center relative top-[6rem]'>
         <section className='flex flex-col md:w-[60%]'>
           <div className='w-full flex gap-3 items-center'>
             <motion.p
@@ -95,13 +95,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='bg-[var(--orange)] 2xl:-m-[80px] lg:-m-[0px] -mx-[20px] px-[25px] pb-20 max-w-[100vw] '>
+      {/* <section className='bg-[var(--orange)] 2xl:-m-[80px] lg:-m-[0px] -mx-[20px] px-[25px] pb-20 max-w-[100vw] '>
         <div className='flex lg:py-[6rem] py-20 flex-col text-white text-center md:max-w-[80%] m-auto'>
           <h1 className='lg:py-7 pb-6 font-bold 2xl:text-[5vw] lg:text-7xl sm:text-[2.7rem] xs:text-[2rem] md:!leading-[6rem] !leading-[1.2]'>Building Tomorrow's Landmarks with Expert Precision.</h1>
           <p className='lg:text-2xl text-lg '>The types of construction projects our company specializes in include <br /> residential, commercial, industrial, and renovation projects.</p>
         </div>  
         <AppleCardsCarouselDemo/>
-      </section>
+      </section> */}
     </>
   );
 }
